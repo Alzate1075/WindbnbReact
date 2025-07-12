@@ -1,6 +1,6 @@
 import React from "react";
-import LocationModal from "./LocationModal";
-import GuestModal from "./GuestModal";
+import LocationModal from "./modal/LocationModal";
+import GuestModal from "./modal/GuestModal";
 import SearchButton from "./buton/SearchButton";
 
 export default function ModalPrincipal({ closeModal }) {
