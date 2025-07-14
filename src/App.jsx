@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import FiltroStays from "./components/FiltroStays";
+import FiltroStays from "./components/filtro/FiltroStays";
 
 function App() {
   const [stays, setStays] = useState([]);

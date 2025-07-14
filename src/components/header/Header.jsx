@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ModalPrincipal from "./ModalPrincipal";
+import ModalPrincipal from "../modal/ModalPrincipal";
 
 export default function Header({ stays, onFiltrar }) {
   const [openModal, setOpenModal] = useState(false);

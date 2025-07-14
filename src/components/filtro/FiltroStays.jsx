@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import Cards from "./cards/Cards";
+import Header from "../header/Header";
+import Cards from "../cards/Cards";
 
 export default function FiltroStays({ stays }) {
   const [filtro, setFiltro] = useState({ ciudad: "", huespedes: 0 });
