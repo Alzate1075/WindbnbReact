@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalPrincipal from "./ModalPrincipal";
 
-export default function Header() {
+export default function Header({ stays, onFiltrar }) {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => setOpenModal(true);
@@ -38,7 +38,16 @@ export default function Header() {
         </div>
       </div>
 
-      {openModal && <ModalPrincipal closeModal={handleCloseModal} />}
+      {openModal && (
+        <ModalPrincipal
+          stays={stays}
+          onFiltrar={(ciudad, huespedes) => {
+            onFiltrar(ciudad, huespedes);
+            handleCloseModal();
+          }}
+          closeModal={handleCloseModal}
+        />
+      )}
     </header>
   );
 }

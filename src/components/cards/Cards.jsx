@@ -12,7 +12,11 @@ export default function Cards({ stays }) {
           <div class="text-2xl md:text-4xl font-montserrat font-bold text-black">
             <h1>Stays in Finland</h1>
           </div>
-          <h2 class="font-montserrat">14 Stays</h2>
+          <div className="flex justify-between items-center px-4 md:px-10 mt-4">
+            <p className="text-gray-700 font-bold text-lg">
+              {stays.length} Stays
+            </p>
+          </div>
         </div>
       </div>
       {/* CARDS CONTAINER */}
