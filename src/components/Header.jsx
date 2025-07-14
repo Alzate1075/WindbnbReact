@@ -12,7 +12,7 @@ export default function Header({ stays, onFiltrar }) {
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
           <img
-            src="/icons/logo2.png"
+            src="/icons/logoWind.png"
             className="w-[120px] md:w-[170px] md:ml-5"
             alt="Logo"
           />
